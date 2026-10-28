@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jdjdave-infersre_jd328"
+version = "0.1.0"
+description = "用一组明示的正则规则扫描输入，报告推理服务 SRE 工程师·投机解码的命中率相关的命中行与片段"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "jdjdave" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://jdjdave.github.io"
+Repository = "https://github.com/jdjdave/infersre_jd328"
+Issues = "https://github.com/jdjdave/infersre_jd328/issues"
+
+[project.scripts]
+infersre_jd328 = "infersre_jd328:main"
+
+[tool.setuptools]
+py-modules = ["infersre_jd328"]
